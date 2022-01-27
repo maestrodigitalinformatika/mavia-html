@@ -1,5 +1,5 @@
 :root {
-  --text-primary: #211B3D;
+  --text-primary: #0A1F3E;
   --text-white  : #FFFFFF;
 
   --midnight-50 : #f3f4f5;
@@ -26,6 +26,8 @@
   --hit-pink-800: #98654e;
   --hit-pink-900: #7c5340;
 
+  --hit-pink-shadow: rgba(229, 152, 117, 0.5);
+
   --regular  : 400;
   --medium   : 500;
   --extraBold: 800;
@@ -35,6 +37,10 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: var(--regular);
   color      : var(--text-primary);
+}
+
+a {
+  text-decoration: none;
 }
 
 .navbar {
@@ -72,6 +78,10 @@ section {
 .section-2-side .support {
   margin-bottom: 60px;
   font-size    : 18px;
+}
+
+.showcase {
+  margin-bottom: 60px;
 }
 
 .section-cards .tag {
@@ -123,37 +133,104 @@ section {
   margin   : 0;
 }
 
+.undangan-example-wrapper img {
+  border-radius: 10px;
+  width        : 120px;
+  transition   : 0.25s;
+}
+
+.undangan-example-wrapper img:hover {
+  box-shadow: rgba(22, 28, 51, 0.2) 0px 3px 8px;
+}
+
+.list-item {
+  position: relative;
+}
+
+.list-item .icon {
+  font-size: 20px;
+}
+
+.list-item .icon:after {
+  content         : "";
+  width           : 20px;
+  height          : 20px;
+  background-color: var(--hit-pink-500);
+  border-radius   : 100%;
+  position        : absolute;
+  top             : 50%;
+  left            : 7px;
+  transform       : translateY(-50%);
+  z-index         : -1;
+}
+
+.feature-card {
+  padding      : 20px;
+  border       : 1px solid var(--text-primary);
+  border-radius: 20px;
+  position     : relative;
+}
+
+.feature-card .icon {
+  font-size  : 35px;
+  margin-left: 10px;
+}
+
+.feature-card .icon:after {
+  content         : "";
+  width           : 40px;
+  height          : 40px;
+  background-color: var(--hit-pink-500);
+  border-radius   : 100%;
+  position        : absolute;
+  top             : 50%;
+  left            : 15px;
+  transform       : translateY(-50%);
+  z-index         : -1;
+}
+
 .footer {
   background-color: #FAFAF7;
-  margin-bottom: 0;
-  padding: 60px 0 60px 0;
+  margin-bottom   : 0;
+  padding         : 60px 0 60px 0;
+  font-size       : 16px;
 }
 
 .footer img {
-  width: 150px;
+  width        : 150px;
   margin-bottom: 20px;
 }
 
-.footer .social-media {
+.footer a {
+  color: var(--text-primary);
+}
+
+.footer .copyright {
+  font-weight: var(--medium);
+}
+
+/* .footer .social-media {
   margin-bottom: 30px;
 }
 
 .footer .social-media a {
-  font-size: 32px;
   text-decoration: none;
-  color: var(--midnight-500);
-  margin-right: 20px;
+  color          : var(--midnight-500);
+  margin-right   : 20px;
 }
+
+.footer .social-media i {
+  font-size      : 32px;
+} */
 
 .footer .category-title {
   margin-bottom: 80px;
-  font-size: 18px;
-  font-weight: var(--medium);
+  font-size    : 24px;
+  font-weight  : var(--medium);
 }
 
 .footer .category-item {
   margin: 40px 0 0 0;
-  font-size: 18px;
 }
 
 .nicebtn {
@@ -213,4 +290,59 @@ section {
   background-color: var(--midnight-300);
   color           : var(--text-white);
   box-shadow      : inset 0 0 0 .2rem var(--midnight-500), 0 0 0 .2rem var(--midnight-shadow);
+}
+
+.nicebtn-hit-pink-primary {
+  background-color: var(--hit-pink-500);
+  color           : var(--text-white);
+}
+
+.nicebtn-hit-pink-primary:hover {
+  background-color: var(--hit-pink-600);
+  color           : var(--text-white);
+  box-shadow      : inset 0 0 0 .2rem var(--hit-pink-700);
+}
+
+.nicebtn-hit-pink-primary:focus {
+  background-color: var(--hit-pink-500);
+  color           : var(--text-white);
+  box-shadow      : inset 0 0 0 .2rem var(--hit-pink-700), 0 0 0 .2rem var(--hit-pink-shadow);
+}
+
+.nicebtn-hit-pink-primary:active,
+.nicebtn-hit-pink-primary:hover:focus,
+.nicebtn-hit-pink-primary:active:focus {
+  background-color: var(--hit-pink-600);
+  color           : var(--text-white);
+  box-shadow      : inset 0 0 0 .2rem var(--hit-pink-700), 0 0 0 .2rem var(--hit-pink-shadow);
+}
+
+.nicebtn-hit-pink-secondary {
+  background-color: var(--text-white);
+  color           : var(--hit-pink-500);
+  box-shadow      : inset 0 0 0 .1rem var(--hit-pink-500);
+}
+
+.nicebtn-hit-pink-secondary:hover {
+  background-color: var(--hit-pink-200);
+  color           : var(--hit-pink-500);
+  box-shadow      : inset 0 0 0 .2rem var(--hit-pink-500);
+}
+
+.nicebtn-hit-pink-secondary:focus {
+  background-color: var(--hit-pink-100);
+  color           : var(--hit-pink-500);
+  box-shadow      : inset 0 0 0 .2rem var(--hit-pink-500), 0 0 0 .2rem var(--hit-pink-shadow);
+}
+
+.nicebtn-hit-pink-secondary:active,
+.nicebtn-hit-pink-secondary:hover:focus,
+.nicebtn-hit-pink-secondary:active:focus {
+  background-color: var(--hit-pink-300);
+  color           : var(--hit-pink-700);
+  box-shadow      : inset 0 0 0 .2rem var(--hit-pink-500), 0 0 0 .2rem var(--hit-pink-shadow);
+}
+
+.text-hit-pink {
+  color: var(--hit-pink-500);
 }
