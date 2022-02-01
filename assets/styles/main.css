@@ -41,6 +41,11 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--text-primary);
+}
+
+a:hover {
+  color: var(--text-primary);
 }
 
 .navbar {
@@ -61,6 +66,10 @@ a {
 section {
   margin-top   : 150px;
   margin-bottom: 180px;
+}
+
+section.below-nav {
+  margin-top: 250px;
 }
 
 .section-2-side img {
@@ -231,6 +240,66 @@ section {
 
 .footer .category-item {
   margin: 40px 0 0 0;
+}
+
+.section-side-banner {
+  margin-top   : 0;
+  margin-bottom: 0;
+}
+
+.section-side-banner img {
+  width    : 500px;
+  max-width: 100%;
+}
+
+.section-side-banner .category-title {
+  margin-bottom: 20px;
+  font-size    : 24px;
+  font-weight  : var(--medium);
+}
+
+.section-side-banner .title {
+  margin-bottom: 20px;
+  font-size    : 48px;
+  font-weight  : var(--extraBold);
+  color        : var(--midnight-500);
+}
+
+.section-side-banner .support {
+  margin-bottom: 60px;
+  font-size    : 18px;
+}
+
+.fixed-wrapper {
+  position: fixed;
+  width: 25%;
+}
+
+.section-side-banner .side-banner-wrapper {
+  overflow: hidden;
+  max-height: 100vh;
+}
+
+.section-side-banner .side-banner {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.section-side-banner .content-wrapper {
+  margin-top   : 150px;
+  margin-bottom: 150px;
+}
+
+.basic-form input {
+  border       : 1px solid var(--midnight-200);
+  border-radius: 15px;
+  padding      : 12px 20px 12px 20px;
+}
+
+.form-control:focus {
+  border-color: var(--midnight-100);
+  outline: 0;
+  box-shadow: 0 0 0 .2rem var(--midnight-shadow);
 }
 
 .nicebtn {
