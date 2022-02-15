@@ -41,7 +41,7 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--text-primary);
+  color          : var(--text-primary);
 }
 
 a:hover {
@@ -61,6 +61,31 @@ a:hover {
   margin-left : 20px;
   margin-right: 20px;
   color       : #A8A9AB;
+}
+
+.user-greet .user-name {
+  margin-right: 10px;
+}
+
+.user-greet .user-photo {
+  height: 50px;
+  width : 50px;
+}
+
+.nicedropdown {
+  border       : 0;
+  box-shadow: 0px 6px 60px rgba(22, 28, 51, 0.06);
+  min-width    : 150px;
+  border-radius: 20px;
+  padding      : 10px;
+}
+
+.nicedropdown li {
+  padding: 10px 0;
+}
+
+.dropdown-menu[data-bs-proper] {
+  top: 60px;
 }
 
 section {
@@ -272,16 +297,16 @@ section.below-nav {
 
 .fixed-wrapper {
   position: fixed;
-  width: 25%;
+  width   : 25%;
 }
 
 .section-side-banner .side-banner-wrapper {
-  overflow: hidden;
+  overflow  : hidden;
   max-height: 100vh;
 }
 
 .section-side-banner .side-banner {
-  max-width: 100%;
+  max-width : 100%;
   max-height: 100%;
 }
 
@@ -298,8 +323,8 @@ section.below-nav {
 
 .form-control:focus {
   border-color: var(--midnight-100);
-  outline: 0;
-  box-shadow: 0 0 0 .2rem var(--midnight-shadow);
+  outline     : 0;
+  box-shadow  : 0 0 0 .2rem var(--midnight-shadow);
 }
 
 .nicebtn {
