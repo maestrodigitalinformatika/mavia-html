@@ -79,73 +79,58 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="header">Kelola Undangan</h1>
+          <h1 class="header">Buat Undangan Baru</h1>
           <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, quod.</p>
         </div>
       </div>
 
       <div class="row my-5">
         <div class="col-lg-12">
-          <a href="/dashboard/create.html" class="btn nicebtn nicebtn-hit-pink-primary mb-3">Buat Undangan Baru</a>
-
           <div class="card-wrapper">
-            <table class="table table-borderless">
-              <tbody>
-                <tr class="align-middle">
-                  <td width="10%" scope="row">
-                    <img src="../assets/images/undangan/undangan1.png" alt="" height="120">
-                  </td>
-                  <td>
-                    <p class="mb-2">
-                      <b>Dulu Kita Masih SMA</b>
-                    </p>
-                    <p>12 Desember 1990</p>
-                  </td>
-                  <td>
-                    <b>Aktif</b>
-                  </td>
-                  <td>
-                    <a href="#" class="btn nicebtn nicebtn-midnight-secondary">Arsipkan</a>
-                  </td>
-                </tr>
-  
-                <tr class="align-middle">
-                  <td width="10%" scope="row">
-                    <img src="../assets/images/undangan/undangan2.png" alt="" height="120">
-                  </td>
-                  <td>
-                    <p class="mb-2">
-                      <b>Aku Menunggu 1 Muharram</b>
-                    </p>
-                    <p>30 Juli 2022</p>
-                  </td>
-                  <td>
-                    <b>Arsip</b>
-                  </td>
-                  <td>
-                    <a href="#" class="btn nicebtn nicebtn-hit-pink-primary">Aktifkan</a>
-                  </td>
-                </tr>
-  
-                <tr class="align-middle">
-                  <td width="10%" scope="row">
-                    <img src="../assets/images/undangan/undangan4.png" alt="" height="120">
-                  </td>
-                  <td>
-                    <p class="mb-2">
-                      <b>TikTok Awards Indonesia 2020</b>
-                    </p>
-                    <p>30 Januari 2021</p>
-                  </td>
-                  <td>
-                    <b>Arsip</b>
-                  </td>
-                  <td>
-                    <a href="#" class="btn nicebtn nicebtn-hit-pink-primary">Aktifkan</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            Pilih Template
+          </div>
+        </div>
+      </div>
+
+      <div class="row my-5">
+        <div class="col-lg-12">
+          <div class="card-wrapper">
+            Lengkapi Data
+            <form action="#" class="basic-form mb-3" id="createUndanganForm">
+              <div class="mb-3">
+                <label for="title" class="form-label">Judul Undangan</label>
+                <input type="text" class="form-control" id="title" aria-describedby="title">
+              </div>
+              <div class="mb-3">
+                <label for="mempelai_pria" class="form-label">Nama Mempelai Pria</label>
+                <input type="text" class="form-control" id="mempelai_pria" aria-describedby="mempelai_pria">
+              </div>
+              <div class="mb-3">
+                <label for="mempelai_wanita" class="form-label">Nama Mempelai Wanita</label>
+                <input type="text" class="form-control" id="mempelai_wanita" aria-describedby="mempelai_wanita">
+              </div>
+              <div class="mb-3">
+                <label for="date" class="form-label">Hari, Tanggal</label>
+                <input type="date" class="form-control" id="date" aria-describedby="date">
+              </div>
+              <div class="mb-3">
+                <label for="time" class="form-label">Waktu</label>
+                <input type="time" class="form-control" id="time" aria-describedby="time">
+              </div>
+              <div class="mb-3">
+                <label for="location" class="form-label">Tempat</label>
+                <input type="text" class="form-control" id="location" aria-describedby="location">
+              </div>
+              <div class="mb-3">
+                <label for="location_link" class="form-label">Link Lokasi</label>
+                <input type="text" class="form-control" id="location_link" aria-describedby="location_link">
+              </div>
+              <div class="mb-3">
+                <label for="meet_link" class="form-label">Link Zoom / Google Meet</label>
+                <input type="text" class="form-control" id="meet_link" aria-describedby="meet_link">
+              </div>
+              <button type="submit" class="w-100 btn nicebtn nicebtn-hit-pink-primary">Submit</button>
+            </form>
           </div>
         </div>
       </div>
@@ -155,6 +140,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
+  <script src="../assets/scripts/create-undangan.js"></script>
 </body>
 
 </html>
